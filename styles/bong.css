@@ -1,0 +1,544 @@
+:root {
+    --nav-link-color: rgba(233, 242, 251, 1);
+    --nav-link-hover-color: rgb(139, 191, 243);
+    --title-span-color: rgb(105, 68, 33);
+    --hero-background: rgb(255, 255, 255);
+    --hero-background-gradient: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(17, 57, 96, 1) 100%);
+  
+    --font-small: 0.5em;
+    --font-medium: 1em;
+    --font-medium-large: 1.25em;
+    --font-large: 1.5rem;
+    --font-x-large: 2rem;
+    --font-2x-large: 3rem;
+    --font-3x-large: 3.5rem;
+    --font-4x-large: 4rem;  
+    --font-5x-large: 4.5rem;
+    --font-6x-large: 5rem;
+    --font-7x-large: 5.5rem;
+  
+    --text-color: rgb(0, 0, 0);
+
+    --background-color-A: #F4F3EE;
+    --background-color-B: #E9E6DF;
+  
+    --transition-slow: 0.6s;
+    --transition-medium: 0.4s;
+    --transition-fast: 0.2s;
+    --transition-fastest: 0.1s;
+  }
+  
+  /*Large Desktop*/
+  /*General CSS*/
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  a {
+    color: black; /* Set the text color to black */
+    text-decoration-color: black; /* Set the underline color to black */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover if needed */
+  }
+  
+  
+  /*Navigation*/
+
+  .nav-container {
+    width: auto;
+    height: 70px;
+    display: flex;
+    position: relative;
+    background-color: #7e6044!important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-image {
+    max-width: auto;
+    height: 110px;
+    padding: 20px;
+    padding-top: 25px;
+  }
+
+  .right-link {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    padding-top: 25px;
+    gap: 25px;
+    font-family: "Quicksand", sans-serif;
+    justify-content: flex-end;
+    color: var(--text-color);
+    font-size: large;
+  }
+
+  .nav-container .right-link a:hover  {
+    color: var(--nav-link-hover-color);
+  }
+
+  .nav-container .right-link a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    transition: var(--transition-fast);
+  }
+  
+  /*Hero*/
+  
+  .s-container  {
+    width: 100%;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider img {
+    
+    max-width: 100%; /* Set the desired width in pixels */
+    height: auto;
+    scroll-snap-align: center;
+    object-fit: contain;
+  }
+  
+  /* Video */
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Maintain a 16:9 aspect ratio (height / width) for the video */
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background-color: #cfcac5!important;
+  }
+
+  .responsive-iframe {
+    top: 0;
+    left: 0;
+    width: 1245px;
+    height: 700px;
+  }
+
+
+  /*About*/
+  
+  .about {
+    min-height: 400px;
+    display: flex;
+    gap: 20px;
+    padding: 30px 25px;
+    background-color: var(--background-color-B);
+  }
+  .a-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .a-column {
+    display: flex;
+    text-align: center;
+    max-width: 85%;
+    margin: 0 auto; /* Center the container horizontally */ 
+  }
+
+  .a-title {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: var(--font-x-large);
+  }
+  
+  .column {
+    flex: 1; /* Each column takes equal width */
+    padding: 10px;
+    margin: 20px; /* Add margin for spacing between columns */
+    font-size: var(--font-medium-large);
+    background-color: #cfcac5!important;
+    border-radius: 5px;
+  }
+
+  .d-column {
+    flex: 1; /* Each column takes equal width */
+    padding: 10px;
+    margin: 20px; /* Add margin for spacing between columns */
+    font-size: var(--font-medium-large);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .svg-icon {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    /* Add any additional styling for the SVG icon */
+  }
+
+  .d-svg-icon {
+    width: auto;
+    height: 180px;
+    padding: 10px;
+    /* Add any additional styling for the SVG icon */
+  }
+
+
+  .column-description, .d-column-description {
+    text-align: justify;
+    padding: 10px;
+  }
+  
+  
+  /*Publications*/
+  .publications {
+    min-height: 400px;
+    padding: 30px 25px;
+    background-color: var(--background-color-A);
+  }
+
+  .read-all-1-button {
+    position: absolute;
+    top: 20px;
+    right: 165px;
+    padding: 20px 20px;
+    background-color: #cfcac5;
+    border: none;
+    border-radius: 4px;
+  }
+  .read-all-2-button {
+    position: absolute;
+    top: 20px;
+    right: 320px;
+    padding: 20px 20px;
+    background-color: #cfcac5;
+    border: none;
+    border-radius: 4px;
+  }
+  .read-all-hover:hover {
+    background-color: #86603c!important;
+    color: #000000;
+  }
+  
+  .p-container {
+    position: relative;
+  }
+
+  .p-column {
+    display: flex;
+    text-align: center;
+  }
+
+  .p-title {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: var(--font-x-large);
+    
+  }
+  
+  .p-row {
+    display: flex;
+    align-items: center; /* Align vertically centered */
+    max-width: 85%;
+    margin: 0 auto; /* Center the container horizontally */ 
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #cfcac5!important;
+}
+  
+  .p-row-image {
+    width: 450px;
+    height: 250px;
+    margin-right: 20px; /* Add some space between the image and text */
+  }
+
+  .p-row-text {
+    padding: 10px;
+    font-size: var(--font-medium-large);
+    border-radius: 5px;
+  }
+
+  .pp-title {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    font-size: var(--font-x-medium);
+    color: black;
+    text-decoration: none;
+  }
+
+  
+  /*News*/
+  .news {
+    min-height: 400px;
+    padding: 30px 25px;
+    background-color: var(--background-color-B);
+  }
+  .n-container {
+    position: relative;
+  }
+
+  .n-title {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: var(--font-x-large);
+  }
+  
+  .n-row {  
+    flex: 1; /* Each column takes equal width */
+    max-width: 84%;
+    padding-left: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: var(--font-medium-large);
+    background-color: #cfcac5!important;
+  }
+
+  .nn-title {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    font-size: var(--font-x-medium);
+  }
+
+  .y-row {  
+    flex: 1; /* Each column takes equal width */
+    max-width: 100%;
+    padding-left: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: var(--font-medium-large);
+    background-color: #cfcac5!important;
+  }
+
+  .yy-title {
+    text-align: left;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: var(--font-x-large);
+  }
+
+  /*Team*/
+  .team {
+    min-height: 400px;
+    display: flex;
+    gap: 20px;
+    padding: 30px 25px;
+    background-color: var(--background-color-A);
+  }
+
+  .team-info {
+    display: flex; /* Use flexbox to make the divs appear side by side */
+    justify-content: center;
+  }
+  
+  .team-info div {
+    margin-right: 20px; /* Optional: Add some spacing between the divs */
+  }
+
+  .alumni {
+    min-height: 400px;
+    display: flex;
+    gap: 20px;
+    padding: 30px 25px;
+    background-color: var(--background-color-B);
+  }
+
+  .email-svg-icon {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    /* Add any additional styling for the SVG icon */
+  }
+  .link-svg-icon {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    /* Add any additional styling for the SVG icon */
+  }
+
+
+  .svg-t-icon {
+    width: 250px;
+    height: 300px;  
+    padding: 10px;
+    /* Add any additional styling for the SVG icon */
+  }
+
+  .column-title {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  
+  /*FOOTER*/
+
+  .f-title {
+    text-align: left;
+    font-weight: bold;
+    font-size: var(--font-large);
+    margin-bottom: 10px;
+  }
+  .footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px; /* Add padding to the entire footer */
+    background: #7e6044;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    display: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  } 
+
+  .f-column {
+    display: 1;
+    text-align: left;
+    max-width: 60%;
+    margin: 0 auto; /* Center the container horizontally */ 
+    padding-top: 20px; /* Add padding to the entire footer */
+  }
+
+  .f-column-description {
+    text-align: justify;
+  }
+
+  .f-credit {
+    text-align: justify;
+    padding-top: 20px; /* Add padding to the entire footer */
+  }
+  
+  /*Utilities*/
+  @media (width <= 600px){
+
+    .nav-container {
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .right-link {
+      display: none;
+    }
+
+    .logo-image {
+      max-width: auto;
+      height: 110px;
+      display: block; /* Ensures the image is a block-level element */
+    }
+
+    .responsive-iframe {
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100%;
+    }
+
+    .a-column {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 85%;
+      margin: 0 auto; /* Center the container horizontally */ 
+    }
+
+    .d-column-description {
+      display: none;
+
+    }
+    
+    .svg-icon {
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      /* Add any additional styling for the SVG icon */
+    }
+  
+    .d-svg-icon {
+      width: 100px;
+      height: auto;
+      padding: 5px;
+      /* Add any additional styling for the SVG icon */
+    }
+
+    .read-all-1-button, .read-all-2-button {
+      
+      position: static;
+      background-color: #cfcac5;
+      border-radius: 4px;
+    }
+    
+    .p-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Align vertically centered */
+      max-width: 85%;
+      margin: 0 auto; /* Center the container horizontally */ 
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #cfcac5!important;
+  }
+    
+    .p-row-image {
+      width: 60vw;
+      height: auto;
+      margin-right: 20px; /* Add some space between the image and text */
+    }
+  
+    .column-description {
+      display: none;
+    }
+
+    .svg-t-icon {
+      width: 60vw;
+      height: auto;  
+      padding: 10px;
+      /* Add any additional styling for the SVG icon */
+    }
+
+    .email-svg-icon, .link-svg-icon {
+      width: 10vw;
+      height: auto;
+      padding: 5px;
+      /* Add any additional styling for the SVG icon */
+    }
+     
+  }
+  
+  
