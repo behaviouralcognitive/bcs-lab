@@ -446,7 +446,7 @@
   }
   
   /*Utilities*/
-  @media (width <= 1000px){
+  @media screen and (max-device-width: 1000px){
 
     .nav-container {
       justify-content: center;
