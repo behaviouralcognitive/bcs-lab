@@ -373,7 +373,7 @@ margin-left: -500%;
        margin: 0;
     }
     #slides {
-       max-width: calc(100% - 140px);
+       max-width: 90vw;
        margin: 0 auto;
     }
  }
@@ -885,5 +885,45 @@ margin-left: -500%;
     }
      
   }
+  /*Utilities*/
+  @media screen and (max-device-width: 500px){
+
+    .publications {
+      min-height: 400px;
+      padding: 30px 25px;
+      background-color: var(--background-color-A);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .p-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Align vertically centered */
+      max-width: 85%;
+      margin: 0 auto; /* Center the container horizontally */ 
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #cfcac5!important;
+  }
+    
+    .p-row-image {
+      max-width: 150px; /* Set your maximum width */
+      max-height: 20vh; /* Set your maximum height */
+      width: auto;
+      height: auto;
+      margin-right: 20px; /* Add some space between the image and text */
+    }
   
+    .column-description {
+      display: none;
+    }
+
+     
+  }
   
