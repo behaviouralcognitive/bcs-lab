@@ -150,7 +150,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 60%; /* Set the width to 100% to prevent overflow */
+    width: 90vw; /* Set the width to 100% to prevent overflow */
     height: 85%;    
   }
 
