@@ -224,6 +224,18 @@
     text-align: justify;
     padding: 10px;
   }
+
+  .pub-column-description {
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .pub-nn-title {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    font-size: var(--font-x-medium);
+  }
   
   /*Publications!!!!!!!!!!!!*/
   #slider {
@@ -257,7 +269,6 @@
  #slide3:checked ~ #slides .inner {
     margin-left: -200%;
  }
-}
 #slideA:checked ~ #slides .inner {
   margin-left: 0;
 }
@@ -840,9 +851,18 @@
       height: auto;
       margin-right: 20px; /* Add some space between the image and text */
     }
+
+    .pub-nn-title {
+      text-align: left;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 0.7em;
+    }
   
-    .column-description {
-      display: none;
+    .pub-column-description {
+      text-align: justify;
+      padding: 10px;
+      font-size: var(--font-small);
     }
 
     .svg-t-icon {
@@ -886,8 +906,8 @@
   }
     
     .p-row-image {
-      max-width: 150px; /* Set your maximum width */
-      max-height: 20vh; /* Set your maximum height */
+      max-width: 220px; /* Set your maximum width */
+      max-height: 40vh; /* Set your maximum height */
       width: auto;
       height: auto;
       margin-right: 20px; /* Add some space between the image and text */
@@ -895,7 +915,7 @@
 	
     .p-row-text {
     padding: 10px;
-    font-size: var(--font-medium);
+    font-size: 0.7em;
     border-radius: 5px;
   }
   
