@@ -233,7 +233,7 @@
   .pub-blue-column-description {
     text-align: justify;
     padding: 10px;
-	  color: blue;
+    color: blue;
   }
 
   .pub-nn-title {
@@ -859,13 +859,24 @@
     }
 
     .pub-nn-title {
-      display: none;
+      text-align: left;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 0.7em;
     }
   
     .pub-column-description {
       text-align: justify;
       padding: 10px;
-      font-size: 0.7em;
+      font-size: var(--font-small);
+    }
+
+    .pub-blue-column-description {
+      text-align: justify;
+      padding: 10px;
+      font-size: var(--font-small);
+      color: blue;
+      text-decoration: underline;
     }
 
     .svg-t-icon {
@@ -875,7 +886,7 @@
       /* Add any additional styling for the SVG icon */
     }
 
-    .email-svg-icon, .link-svg-icon, .link-svg-icon-foot {
+    .email-svg-icon, .link-svg-icon {
       width: auto;
       height: 5vh;
       padding: 5px;
