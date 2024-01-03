@@ -558,6 +558,12 @@
     /* Add any additional styling for the SVG icon */
   }
 
+   .link-svg-icon-foot {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+
 
   .svg-t-icon {
     width: 250px;
@@ -869,7 +875,7 @@
       /* Add any additional styling for the SVG icon */
     }
 
-    .email-svg-icon, .link-svg-icon {
+    .email-svg-icon, .link-svg-icon, .link-svg-icon-foot {
       width: auto;
       height: 5vh;
       padding: 5px;
