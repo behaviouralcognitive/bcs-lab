@@ -853,16 +853,13 @@
     }
 
     .pub-nn-title {
-      text-align: left;
-      font-weight: bold;
-      padding: 10px;
-      font-size: 0.7em;
+      display: none;
     }
   
     .pub-column-description {
       text-align: justify;
       padding: 10px;
-      font-size: var(--font-small);
+      font-size: 0.7em;
     }
 
     .svg-t-icon {
