@@ -602,20 +602,25 @@
     color: rgb(255, 255, 255);
     font-weight: 500;
     display: 1;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
   } 
+
+  .colum-footer {
+    display: flex;      /* Change from 'display: 1' to 'display: flex' */
+  justify-content: space-between; /* Distribute columns evenly */
+  gap: 20px;
+  }
 
   .f-column {
     display: 1;
     text-align: left;
     max-width: 60%;
     margin: 0 auto; /* Center the container horizontally */ 
+    text-decoration: none;
   }
 
   .f-column-description {
     text-align: justify;
+    color: white;
   }
 
   .f-credit {
