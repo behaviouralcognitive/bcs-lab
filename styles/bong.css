@@ -230,6 +230,12 @@
     padding: 10px;
   }
 
+  .pub-blue-column-description {
+    text-align: justify;
+    padding: 10px;
+	  color: blue;
+  }
+
   .pub-nn-title {
     text-align: left;
     font-weight: bold;
